@@ -2,6 +2,7 @@
 
 ## 🎯 Objectif
 Ce lab a pour but de configurer un réseau avec **routage statique** sur 5 routeurs et 1 switch, et de vérifier la connectivité entre les PC à travers le réseau. Il permet de pratiquer :  
+
 - Configuration des interfaces et IP  
 - Routage statique  
 - Tests de connectivité (ping, tracert)  
@@ -13,12 +14,12 @@ Ce lab a pour but de configurer un réseau avec **routage statique** sur 5 route
 La topologie complète est disponible dans la capture :  
 `captures/solution/topology_complete.png`  
 
-> Les routeurs R0 à et R4 sont configurés sur des **sous-réseaux distincts** pour éviter les conflits IP.
+> Les routeurs R0 à R4 sont configurés sur des **sous-réseaux distincts** pour éviter les conflits IP.
 
 ---
 
 ## ⚙️ Configurations
-Toutes les **configurations de routeurs R0 à R4** sont visibles via les captures `show running-config` dans :  
+Toutes les configurations de routeurs R0 à R4 sont visibles via les captures `show running-config` dans :  
 `captures/solution/`
 
 ---
@@ -33,6 +34,7 @@ Toutes les **configurations de routeurs R0 à R4** sont visibles via les capture
 
 ## ✅ Conclusion
 Ce lab permet de :  
+
 - Comprendre le fonctionnement du **routage statique**  
 - Identifier et résoudre les problèmes de connectivité  
 - Travailler avec des **sous-réseaux distincts** pour éviter les conflits IP  
