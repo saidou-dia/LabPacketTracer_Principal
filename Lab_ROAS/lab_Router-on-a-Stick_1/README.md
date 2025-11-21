@@ -55,8 +55,8 @@ Tous les devices ont SSH activé sur les lignes VTY avec le compte suivant :
 ---
 
 ## Captures d’écran
-- `/capture/Empty/PC0_Ping_Fail.png` → ping échoué avant configuration  
-- `/capture/Solution/PC0_Ping.png` → ping réussi après configuration  
+- `/capture/Empty/PC2_Ping_Fail.png` → ping échoué avant configuration  
+- `/capture/Solution/PC2_Ping.png` → ping réussi après configuration  
 - `/capture/Solution/R0_show_run.png` → configuration du routeur  
 - `/capture/Solution/SW0_show_vlan_trunk.png` → VLAN et trunk sur SW0  
 
@@ -74,5 +74,6 @@ Tous les devices ont SSH activé sur les lignes VTY avec le compte suivant :
 3. Tester la connectivité entre PC et serveur dans différents VLANs.  
 4. Configurer un accès SSH sécurisé sur les switches.  
 5. Préparer un lab professionnel pour GitHub et LinkedIn.
+
 
 
