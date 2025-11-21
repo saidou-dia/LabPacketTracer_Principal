@@ -22,7 +22,7 @@ On apprend à :
 - PCs et serveur assignés aux VLANs correspondants  
 
 
-https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png
+![Topo](https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png) https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png
 ---
 
 ## 📂 Structure du dépôt
