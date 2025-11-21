@@ -22,33 +22,6 @@ Vous apprendrez à configurer des VLANs sur des switches, à configurer des port
 
 ---
 
-## 📂 Structure du dépôt
-
-─lab_VLAN_Router-on-a-Stick
-    │   README.md
-    │
-    ├───capture
-    │   ├───Empty
-    │   │       PC0_Ping_Fail.png
-    │   │
-    │   ├───Solution
-    │   │       PC0_Ping.png
-    │   │       R0_show_run.png
-    │   │       SW0_show_vlan_trunk.png
-    │   │
-    │   └───Topology
-    │           Topology.png
-    │
-    ├───configs
-    │       R0.txt
-    │       SW0.txt
-    │       SW1.txt
-    │
-    └───pkt
-            cisco_routage_inter_vlans_completed.pkt
-            cisco_routage_inter_vlans_empty.pkt
-
-
 ---
 
 ## ⚡ Configurations clés
@@ -138,3 +111,4 @@ Comprendre la séparation des VLANs et le rôle du trunk
 Apprendre la configuration Router-on-a-Stick
 
 Développer la capacité à tester et vérifier la connectivité inter-VLAN
+
