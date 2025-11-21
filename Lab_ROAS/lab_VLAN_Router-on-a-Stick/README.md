@@ -18,11 +18,7 @@ Vous apprendrez à configurer des VLANs sur des switches, à configurer des port
 - **Équipements** :
   - PCs et serveur assignés aux VLANs correspondants
 
-![Topo](diagram/topo.png)
 
----
-
----
 
 ## ⚡ Configurations clés
 
@@ -111,4 +107,5 @@ Comprendre la séparation des VLANs et le rôle du trunk
 Apprendre la configuration Router-on-a-Stick
 
 Développer la capacité à tester et vérifier la connectivité inter-VLAN
+
 
