@@ -23,7 +23,7 @@ Vous apprendrez à configurer des VLANs sur des switches, à configurer des port
 ## ⚡ Configurations clés
 
 ### SW0
-```text
+
 vlan 10
 name bleu
 vlan 20
@@ -67,8 +67,6 @@ interface fa0/5
  switchport mode trunk
  switchport trunk allowed vlan 10,20,30
 R1
-text
-Copier le code
 interface fa0/0.10
  encapsulation dot1q 10
  ip address 192.168.10.254 255.255.255.0
@@ -107,5 +105,6 @@ Comprendre la séparation des VLANs et le rôle du trunk
 Apprendre la configuration Router-on-a-Stick
 
 Développer la capacité à tester et vérifier la connectivité inter-VLAN
+
 
 
