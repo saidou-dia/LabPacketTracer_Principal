@@ -22,7 +22,7 @@ La topologie du lab est disponible dans le dossier `/capture/Topology/` :
 
 - **R0** → trunk vers SW0  
 - **SW0** → VLAN 10 et 20 pour les PC, trunk vers R0 et SW1  
-- **SW1** → VLAN 10, 20 et 30 pour extension et serveur  
+- **SW2** → VLAN 10, 20 et 30 pour extension et serveur  
 - **VLAN 40** → Management VLAN pour SSH sur les switches
 
 ---
@@ -74,3 +74,4 @@ Tous les devices ont SSH activé sur les lignes VTY avec le compte suivant :
 3. Tester la connectivité entre PC et serveur dans différents VLANs.  
 4. Configurer un accès SSH sécurisé sur les switches.  
 5. Préparer un lab professionnel pour GitHub et LinkedIn.
+
