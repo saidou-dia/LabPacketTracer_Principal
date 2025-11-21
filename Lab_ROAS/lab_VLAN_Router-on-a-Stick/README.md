@@ -22,9 +22,22 @@ On apprend à :
 - PCs et serveur assignés aux VLANs correspondants  
 
 
-![Topo](https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png) https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png
+![Topo](https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png) 
+
+
+## ✅ Tests à effectuer
+
+- Ping inter-VLAN depuis un PC vers les autres VLANs  
+- Vérification VLANs et trunks sur les switches :  
+  - `show vlan brief`  
+  - `show interface trunk`
+
 ---
 
-## 📂 Structure du dépôt
+## 📸 Captures recommandées
+
+- **Topologie complète** (`topo_completed.png`)  
+- **Ping réussi** depuis un PC (`PC0_ping.png`)  
+- **Verification VLANs et trunks** (`show_vlan.png`, `show_trunk.png`)  
 
 
