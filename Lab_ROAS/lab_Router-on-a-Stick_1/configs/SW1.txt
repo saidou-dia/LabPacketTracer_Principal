@@ -1,0 +1,27 @@
+switch2
+!
+interface FastEthernet0/1
+ switchport access vlan 10
+ switchport mode access
+!
+interface FastEthernet0/2
+ switchport access vlan 20
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport mode trunk
+!
+interface FastEthernet0/4
+ switchport access vlan 30
+ switchport mode access
+!
+interface Vlan40
+ ip address 192.168.40.2 255.255.255.0
+!
+ip default-gateway 192.168.40.254
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+end

@@ -1,0 +1,12 @@
+vlan 10
+ name Users_VLAN10
+!
+vlan 20
+ name Users_VLAN20
+!
+vlan 30
+ name Servers_VLAN30
+!
+vlan 40
+ name Management
+!

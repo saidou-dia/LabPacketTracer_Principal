@@ -1,0 +1,38 @@
+router0
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.254 255.255.255.0
+ ip helper-address 192.168.30.1
+!
+interface FastEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.254 255.255.255.0
+ ip helper-address 192.168.30.1
+!
+interface FastEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 192.168.30.254 255.255.255.0
+!
+interface FastEthernet0/0.40
+ encapsulation dot1Q 40
+ ip address 192.168.40.254 255.255.255.0
+!
+interface FastEthernet0/1
+ no ip address
+ shutdown
+!
+ip classless
+!
+line con 0
+!
+line vty 0 4
+ login local
+ transport input ssh
+!
+end
