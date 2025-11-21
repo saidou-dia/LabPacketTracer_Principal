@@ -63,8 +63,8 @@ Tous les devices ont SSH activé sur les lignes VTY avec le compte suivant :
 ---
 
 ## Fichiers Packet Tracer
-- `/pkt/cisco_routage_inter_vlans_empty.pkt` → fichier initial pour exercice  
-- `/pkt/cisco_routage_inter_vlans_completed.pkt` → fichier final avec config complète
+- `/pkt/Router-on-a-Stick_1_empty.pkt` → fichier initial pour exercice  
+- `/pkt/Router-on-a-Stick_1_completed.pkt` → fichier final avec config complète
 
 ---
 
@@ -74,4 +74,5 @@ Tous les devices ont SSH activé sur les lignes VTY avec le compte suivant :
 3. Tester la connectivité entre PC et serveur dans différents VLANs.  
 4. Configurer un accès SSH sécurisé sur les switches.  
 5. Préparer un lab professionnel pour GitHub et LinkedIn.
+
 
