@@ -1,0 +1,11 @@
+interface fa0/0.10
+ encapsulation dot1q 10
+ ip address 192.168.10.254 255.255.255.0
+
+interface fa0/0.20
+ encapsulation dot1q 20
+ ip address 192.168.20.254 255.255.255.0
+
+interface fa0/0.30
+ encapsulation dot1q 30
+ ip address 192.168.30.254 255.255.255.0

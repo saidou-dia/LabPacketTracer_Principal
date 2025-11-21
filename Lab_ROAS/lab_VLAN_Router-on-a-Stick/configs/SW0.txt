@@ -1,0 +1,29 @@
+! VLANs
+vlan 10
+name bleu
+vlan 20
+name jaune
+vlan 30
+name rouge
+
+! Ports Access
+interface fa0/1
+ switchport mode access
+ switchport access vlan 10
+interface fa0/2
+ switchport mode access
+ switchport access vlan 10
+interface fa0/3
+ switchport mode access
+ switchport access vlan 20
+interface fa0/4
+ switchport mode access
+ switchport access vlan 20
+
+! Trunks
+interface fa0/5
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
+interface fa0/6
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30
