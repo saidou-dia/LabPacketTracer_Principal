@@ -21,9 +21,10 @@ On apprend à :
   - VLAN30 (Rouge) – 192.168.30.0/24  
 - PCs et serveur assignés aux VLANs correspondants  
 
-![Topo](diagram/topo.png)
 
+https://github.com/saidou-dia/LabPacketTracer_Principal/blob/main/Lab_ROAS/lab_VLAN_Router-on-a-Stick/capture/Topology/Topology.png
 ---
 
 ## 📂 Structure du dépôt
+
 
