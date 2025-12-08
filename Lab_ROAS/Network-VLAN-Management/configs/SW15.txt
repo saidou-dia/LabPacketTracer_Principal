@@ -1,0 +1,26 @@
+hostname SW15
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ switchport mode trunk
+!
+interface FastEthernet0/2
+ switchport mode trunk
+!
+interface FastEthernet0/3
+ switchport mode trunk
+!
+interface FastEthernet0/4
+ switchport access vlan 160
+ switchport mode access
+!
+interface Vlan150
+ ip address 10.10.150.15 255.255.255.0
+!
+interface Vlan1
+ shutdown
+!
+ip default-gateway 10.10.150.254
+!

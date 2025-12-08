@@ -1,0 +1,25 @@
+hostname SW14
+!
+spanning-tree mode pvst
+spanning-tree extend system-id
+!
+interface FastEthernet0/1
+ switchport mode trunk
+ switchport trunk allowed vlan 102,104
+!
+interface FastEthernet0/2
+ switchport access vlan 102
+ switchport mode access
+!
+interface FastEthernet0/3
+ switchport access vlan 104
+ switchport mode access
+!
+interface Vlan160
+ ip address 10.10.160.14 255.255.255.0
+!
+interface Vlan1
+ shutdown
+!
+ip default-gateway 10.10.160.254
+!
