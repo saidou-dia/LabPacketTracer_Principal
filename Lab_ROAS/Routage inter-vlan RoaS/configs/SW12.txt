@@ -18,5 +18,3 @@ interface FastEthernet0/3
 interface Vlan1
  shutdown
 !
-ip default-gateway 10.10.160.254
-!
