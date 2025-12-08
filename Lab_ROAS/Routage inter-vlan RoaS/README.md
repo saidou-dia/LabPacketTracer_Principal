@@ -34,46 +34,6 @@ Des PC pour chaque VLAN utilisateur
 
 2 Access Points pour VLAN 160 (WiFi)
 
-📁 Arborescence du projet
-Network-VLAN-Management/
-├── configs/          # Configurations complètes des switches + routeur
-│   ├── SW9.txt
-│   ├── SW10.txt
-│   ├── SW11.txt
-│   ├── SW12.txt
-│   ├── SW13.txt
-│   ├── SW14.txt
-│   ├── SW15.txt
-│   ├── SW16.txt
-│   ├── SW17.txt
-│   ├── R0.txt
-│   └── VLANs.txt
-│
-├── pkt/              # Fichiers Packet Tracer
-│   ├── Network_Topology_completed.pkt
-│   └── Network_Topology_empty.pkt
-│
-└── capture/          # Captures d’écran pour la documentation
-    ├── Topology/
-    │   ├── Topology_empty.png
-    │   └── Topology_completed.png
-    │
-    ├── Solution/
-    │   ├── R0_Show_run.png
-    │   ├── SW9_Show_run.png
-    │   ├── SW10_Show_run.png
-    │   ├── SW11_Show_run.png
-    │   ├── SW12_Show_run.png
-    │   ├── SW13_Show_run.png
-    │   ├── SW14_Show_run.png
-    │   ├── SW15_Show_run.png
-    │   ├── SW16_Show_run.png
-    │   ├── SW17_Show_run.png
-    │   └── PC_Ping.png
-    │
-    └── Empty/
-        └── Ping_Fail.png
-
 🔧 Technologies et compétences utilisées
 
 VLAN / Trunking (802.1Q)
