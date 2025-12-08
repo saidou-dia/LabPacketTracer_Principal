@@ -15,11 +15,6 @@ interface FastEthernet0/3
  switchport access vlan 104
  switchport mode access
 !
-interface Vlan160
- ip address 10.10.160.14 255.255.255.0
-!
 interface Vlan1
  shutdown
-!
-ip default-gateway 10.10.160.254
 !
