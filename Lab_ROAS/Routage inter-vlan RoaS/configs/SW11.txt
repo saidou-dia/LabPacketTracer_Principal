@@ -18,9 +18,6 @@ interface FastEthernet0/3
 interface Vlan150
  ip address 10.10.150.11 255.255.255.0
 !
-interface Vlan160
- ip address 10.10.160.11 255.255.255.0
-!
 interface Vlan1
  shutdown
 !
