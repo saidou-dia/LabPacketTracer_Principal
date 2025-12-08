@@ -28,5 +28,4 @@ interface Vlan150
 interface Vlan1
  shutdown
 !
-ip default-gateway 10.10.150.254
-!
+
