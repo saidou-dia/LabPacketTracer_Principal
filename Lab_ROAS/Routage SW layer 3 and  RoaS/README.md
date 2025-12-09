@@ -1,73 +1,66 @@
-Routage inter-vlan RoaS – Router-on-a-Stick (ROAS) Project
+# Routage Inter-VLAN : Switch L3 et L2
 
-Ce projet présente la mise en place complète d’une infrastructure réseau basée sur VLAN, trunks, routage inter-VLAN (ROAS) et services DHCP, réalisée sous Cisco Packet Tracer.
+**Serial Number** : 1983-1116
 
-Il inclut la configuration de 1 routeur, 9 switches, 2 access points, 1 serveur, ainsi que plusieurs PCs répartis par VLAN.
+## Description
 
-🚀 Objectifs du projet
+Ce projet Packet Tracer illustre la configuration d’un réseau avec routage inter-VLAN entre un **Switch L3 (3560-24PS)** et un **Switch L2 (2960-24TT)**, incluant :
 
-Segmentation du réseau via VLANs (101/102/103/104/150/160/200)
+- VLANs séparés pour différents groupes de PCs  
+- Trunk entre Switch L3 et L2  
+- Serveur DHCP/DNS sur VLAN30 pour distribution d’adresses IP  
 
-Configuration des trunks entre switches
+---
 
-Déploiement du routage inter-VLAN sur un routeur (Router-on-a-Stick)
+## Structure du dépôt
 
-Mise en place d’un serveur DHCP (VLAN 200)
+G:.
+│ README.md
+│
+├───configs # Configurations Cisco sauvegardées (optionnel)
+├───pkt # Fichiers Packet Tracer
+│ ASRS 28 - Routage Intervlan SwL3_SwL2_completed.pkt
+└───capture # Captures et diagrammes
+├───Topology
+├───Solution
+└───Empty
 
-Activation du DHCP relay avec ip helper-address
+yaml
+Copier le code
 
-Connexion de 2 points d’accès WiFi sur le VLAN 160
+---
 
-Tests de connectivité entre tous les VLANs
+## VLANs
 
-Supervision via SSH (Switches + Routeur)
+| VLAN  | Couleur | Appareils |
+|-------|---------|-----------|
+| VLAN10 | Bleu    | PC0, PC1, PC2, PC4 |
+| VLAN20 | Jaune   | PC2, PC3, PC5 |
+| VLAN30 | Rouge   | Serveur DHCP/DNS |
 
-🧱 Architecture
+---
 
-1 Routeur : R0
+## Connexions
 
-9 Switches : SW9 → SW17
+- **Router**
+  - Fa0/0 → Serveur DNS  
+  - Fa0/1 → Switch L3 (Fa0/6)  
 
-1 Serveur VLAN 200 (DHCP)
+- **Switch L3**
+  - VLAN10 → PC0, PC1, PC2  
+  - VLAN20 → PC2, PC3  
+  - VLAN30 → Serveur DHCP  
+  - Trunk → Switch L2 (Fa0/5 ↔ Fa0/3)  
 
-Des PC pour chaque VLAN utilisateur
+- **Switch L2**
+  - VLAN10 → PC4  
+  - VLAN20 → PC5  
+  - VLAN30 → Serveur0  
+  - Trunk → Switch L3  
 
-2 Access Points pour VLAN 160 (WiFi)
+---
 
-🔧 Technologies et compétences utilisées
+## Notes
 
-VLAN / Trunking (802.1Q)
-
-Router-on-a-Stick
-
-DHCP Server & DHCP Relay
-
-Switching L2
-
-Architecture réseau hiérarchique
-
-SSH & management sécurisé
-
-Troubleshooting (ping, tracert, spanning-tree, interfaces trunk…)
-
-📡 Tests réalisés
-
-Vérification du trunking :
-show interfaces trunk sur SW15, SW16, SW17
-
-Vérification des VLAN actifs :
-show vlan brief
-
-Vérification connectivité inter-VLAN :
-ping entre PC de chaque VLAN
-
-Accès au serveur DHCP depuis chaque VLAN
-
-Tests de connectivité WiFi via AP (VLAN 160)
-
-📜 Résultat
-
-✔️ Routage inter-VLAN fonctionnel
-✔️ DHPC relay opérationnel pour tous les VLANs
-✔️ Communication OK entre tous les équipements
-✔️ Infrastructure proprement documentée et reproductible
+- La configuration `ip helper-address` est nécessaire sur les interfaces VLAN10 et VLAN20 du Switch L3 pour permettre aux PCs d’obtenir une IP depuis le serveur DHCP VLAN30.  
+- La topologie est contenue dans le fichier `.pkt` fourni dans le dossier `pkt`.
