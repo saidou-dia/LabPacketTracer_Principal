@@ -1,0 +1,21 @@
+hostname Router
+ip cef
+no ipv6 cef
+
+interface FastEthernet0/0
+ ip address 192.168.100.254 255.255.255.0
+ no shutdown
+
+interface FastEthernet0/1
+ ip address 8.8.8.254 255.0.0.0
+ no shutdown
+
+ip route 0.0.0.0 0.0.0.0 8.8.8.1
+ip route 192.168.10.0 255.255.255.0 192.168.100.1
+ip route 192.168.20.0 255.255.255.0 192.168.100.1
+ip route 192.168.30.0 255.255.255.0 192.168.100.1
+
+line vty 0 4
+ login
+end
+write memory
