@@ -10,25 +10,7 @@ Ce projet Packet Tracer illustre la configuration d’un réseau avec routage in
 - Trunk entre Switch L3 et L2  
 - Serveur DHCP/DNS sur VLAN30 pour distribution d’adresses IP  
 
----
-
-## Structure du dépôt
-
-G:.
-│ README.md
-│
-├───configs # Configurations Cisco sauvegardées (optionnel)
-├───pkt # Fichiers Packet Tracer
-│ ASRS 28 - Routage Intervlan SwL3_SwL2_completed.pkt
-└───capture # Captures et diagrammes
-├───Topology
-├───Solution
-└───Empty
-
-yaml
-Copier le code
-
----
+--
 
 ## VLANs
 
