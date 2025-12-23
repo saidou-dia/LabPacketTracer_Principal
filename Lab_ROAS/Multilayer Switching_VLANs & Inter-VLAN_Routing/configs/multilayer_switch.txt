@@ -1,0 +1,63 @@
+! ==============================
+! MULTILAYER SWITCH - CORE L3
+! ==============================
+
+hostname MLS-Core
+ip routing
+
+! ---- Uplink L3 vers le routeur
+interface FastEthernet0/1
+ no switchport
+ ip address 192.168.100.1 255.255.255.0
+
+! ---- Trunks vers switches d’accès
+interface FastEthernet0/2
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+
+interface FastEthernet0/3
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+
+interface FastEthernet0/4
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+
+! ---- VLAN SERVER
+interface FastEthernet0/5
+ switchport mode access
+ switchport access vlan 200
+
+! ---- SVIs (Inter-VLAN Routing)
+interface Vlan101
+ ip address 192.168.101.254 255.255.255.0
+ ip helper-address 192.168.200.1
+
+interface Vlan102
+ ip address 192.168.102.254 255.255.255.0
+ ip helper-address 192.168.200.1
+
+interface Vlan103
+ ip address 192.168.103.254 255.255.255.0
+ ip helper-address 192.168.200.1
+
+interface Vlan104
+ ip address 192.168.104.254 255.255.255.0
+ ip helper-address 192.168.200.1
+
+interface Vlan150
+ ip address 192.168.150.254 255.255.255.0
+ ip helper-address 192.168.200.1
+
+interface Vlan160
+ ip address 192.168.161.254 255.255.254.0
+ ip helper-address 192.168.200.1
+
+interface Vlan200
+ ip address 192.168.200.254 255.255.255.0
+
+! ---- Route par défaut
+ip route 0.0.0.0 0.0.0.0 192.168.100.254
+
+line vty 0 4
+ login

@@ -1,0 +1,25 @@
+! ==============================
+! ROUTER - WAN / EDGE
+! ==============================
+
+hostname Router
+
+interface FastEthernet0/0
+ ip address 192.168.100.254 255.255.255.0
+ duplex auto
+ speed auto
+
+interface FastEthernet0/1
+ ip address 8.8.8.254 255.0.0.0
+ duplex auto
+ speed auto
+
+interface Vlan1
+ no ip address
+ shutdown
+
+ip classless
+ip route 192.168.0.0 255.255.0.0 192.168.100.1
+
+line vty 0 4
+ login
