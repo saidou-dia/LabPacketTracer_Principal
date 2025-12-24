@@ -1,0 +1,113 @@
+
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ no ip address
+ duplex auto
+ speed auto
+!
+interface FastEthernet0/0.60
+ encapsulation dot1Q 60
+ ip address 192.168.60.254 255.255.255.0
+!
+interface FastEthernet0/0.61
+ encapsulation dot1Q 61
+ ip address 192.168.61.254 255.255.255.0
+!
+interface FastEthernet0/0.62
+ encapsulation dot1Q 62
+ ip address 192.168.62.254 255.255.255.0
+!
+interface FastEthernet0/0.100
+ encapsulation dot1Q 100
+ ip address 192.168.100.254 255.255.255.0
+!
+interface FastEthernet0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial1/0
+ ip address 10.0.0.2 255.255.255.252
+!
+interface Serial1/1
+ ip address 10.0.0.9 255.255.255.252
+!
+interface Serial1/2
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial1/3
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial1/4
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial1/5
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial1/6
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial1/7
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 10.0.0.4 255.255.255.252 10.0.0.1 
+ip route 10.0.0.4 255.255.255.252 10.0.0.10 100
+ip route 192.168.110.0 255.255.255.0 10.0.0.1 
+ip route 0.0.0.0 0.0.0.0 10.0.0.10 
+ip route 192.168.101.0 255.255.255.0 10.0.0.1 
+ip route 192.168.102.0 255.255.255.0 10.0.0.1 
+ip route 192.168.103.0 255.255.255.0 10.0.0.1 
+ip route 192.168.105.0 255.255.255.0 10.0.0.1 
+ip route 192.168.150.0 255.255.255.0 10.0.0.1 
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
